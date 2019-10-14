@@ -46,3 +46,10 @@ section{
 #item.undone{
     text-decoration: unset;
 }
+
+button{
+
+    background: none;
+    border: none;
+    cursor: pointer;
+}

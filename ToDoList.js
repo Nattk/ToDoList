@@ -1,12 +1,19 @@
 var items = [];
 
 function add_item (){
-    var todo_item = document.getElementById("item_input").value;
-    items.push({id: items.length+1, task:todo_item});
-    var list = document.getElementById("ToDoList_list_output");
-    var item = "<div class=\"ToDoList_list_items\" id=\"task_"+items[items.length-1].id+"\"><p onclick=\"swicth_done_item("+items[items.length-1].id+")\" id=\"item\" class=\"undone\">"+todo_item+"</p><button onclick=\"delete_item("+items[items.length-1].id+")\">Supprimez</button><button onclick=\"update_item("+items[items.length-1].id+")\">Modifiez</button></div>\
-    ";
-    list.innerHTML = list.innerHTML +item;
+    if(document.getElementById("item_input").value !=""){
+        var todo_item = document.getElementById("item_input").value;
+        items.push({id: items.length+1, task:todo_item});
+        var list = document.getElementById("ToDoList_list_output");
+        var item = "<div class=\"ToDoList_list_items\" id=\"task_"+items[items.length-1].id+"\"><p onclick=\"swicth_done_item("+items[items.length-1].id+")\" id=\"item\" class=\"undone\">"+todo_item+"</p><button onclick=\"delete_item("+items[items.length-1].id+")\"><img src=\"./picto/delete.png\"/></button><button onclick=\"update_item("+items[items.length-1].id+")\"><img src=\"./picto/edit.png\"/></button></div>\
+        ";
+        list.innerHTML = list.innerHTML +item;
+        todo_item.placeholder = "";
+    }
+    else {
+        alert('Votre tache est vide');
+    }
+
 }
 
 function delete_item (id){
