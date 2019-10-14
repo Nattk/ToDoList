@@ -16,12 +16,43 @@ function delete_item (id){
     list.removeChild(todo_item);
 }
 
-function update_item (id){
-    var todo_item = document.getElementById("task_"+id);
-    // var todo_input_update = <input>
-    // todo_item.append() 
+// function update_item (id){
+//     var todo_item = document.getElementById("task_"+id);
+//     var input = document.createElement("input")
+//     var update_task = document.createElement("button");
+//     var cancel_update_task = document.createElement("button");
+//     cancel_update_task.innerHTML = "Annulez";
+//     update_task.innerHTML = "Modifiez";
+//     update_task.setAttribute('onclick', 'update('+id+')')
+//     cancel_update_task.setAttribute('onclick', 'cancel('+id+')')
+//     input.type = "text";
+//     input.value = todo_item.querySelector('p').innerHTML;
+//     input.placeholder = todo_item.querySelector('p').innerHTML;
+//     todo_item.querySelector('p').setAttribute('style', "display:none");
+//     var buttons = todo_item.querySelectorAll('button');
+//     for(i=0; i<buttons.length; i++){
+//         buttons[i].setAttribute('style', 'display:none');
+//     }
+//     todo_item.appendChild(input);
+//     todo_item.appendChild(update_task);
+//     todo_item.appendChild(cancel_update_task);
+// }
 
-}
+// function update(id){
+  
+
+// }
+
+// function cancel(id){
+//     var todo_item = document.getElementById("task_"+id);
+//     todo_item.querySelector('input').remove();
+//     var buttons = todo_item.querySelectorAll('buttons');
+//     for(i=0; i<buttons.length; i++){
+//         buttons[i].remove();
+//     }    
+//     todo_item.querySelector('button').setAttribute('style', "display:block");
+//     todo_item.querySelector('p').setAttribute('style', "display:block");    
+// }
 
 function swicth_done_item(id){
     var todo_item = document.getElementById("task_"+id).querySelector('p');
