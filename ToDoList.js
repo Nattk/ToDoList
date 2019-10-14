@@ -12,7 +12,6 @@ function add_item (){
 function delete_item (id){
     var todo_item = document.getElementById("task_"+id);
     var list = document.getElementById("ToDoList_list_output");
-    console.log(list);
     list.removeChild(todo_item);
 }
 
