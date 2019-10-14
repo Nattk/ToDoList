@@ -30,3 +30,15 @@ section{
     display: flex;
     flex-direction: row;
 }
+
+#item{
+    cursor: pointer;
+}
+
+#item.done{
+    text-decoration: line-through;
+}
+
+#item.undone{
+    text-decoration: unset;
+}
