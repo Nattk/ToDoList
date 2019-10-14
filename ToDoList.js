@@ -18,6 +18,8 @@ function delete_item (id){
 
 function update_item (id){
     var todo_item = document.getElementById("task_"+id);
+    // var todo_input_update = <input>
+    // todo_item.append() 
 
 }
 
