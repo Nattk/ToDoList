@@ -12,7 +12,8 @@ section{
     background-color:white;
     display: flex;
     flex-direction: column;
-
+    align-self: center;
+    align-items: center;
 }
 
 #ToDoList_add_input{
