@@ -10,4 +10,22 @@ section{
     width:50%;
     height: 100%;
     background-color:white;
+    display: flex;
+    flex-direction: column;
+
+}
+
+#ToDoList_add_input{
+    display: flex;
+    flex-direction: row;
+}
+
+#ToDoList_list_output{
+    display: flex;
+    flex-direction: column;
+}
+
+#ToDoList_list_items{
+    display: flex;
+    flex-direction: row;
 }
